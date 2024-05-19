@@ -1,0 +1,38 @@
+.input {
+    font-size: 16px;
+}
+
+ion-item {
+    --background:#3f4242;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.signupLink {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    right: 0;
+
+    p{
+        font-size: 0.9rem;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.jatemconta {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        font-weight: 400;
+        text-decoration: none;
+    }
+}

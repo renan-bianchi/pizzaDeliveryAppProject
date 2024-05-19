@@ -4,7 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    redirectTo: 'landing',
+    pathMatch: 'full'
   },
   {
     path: 'pagtreino',
@@ -25,7 +26,11 @@ const routes: Routes = [
   {
     path: 'reset-password',
     loadChildren: () => import('./paginas/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
-  }
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./paginas/home/home.module').then( m => m.HomePageModule)
+  },
 ];
 @NgModule({
   imports: [
