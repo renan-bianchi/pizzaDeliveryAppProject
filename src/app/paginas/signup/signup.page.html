@@ -15,7 +15,7 @@
       
       <div *ngIf="this.regForm.controls?.['fullname'].touched && this.regForm.controls?.['fullname'].invalid">
         <ion-text *ngIf="errorControl['fullname'].errors?.['required']">
-        Nome obrigatório!
+        <p>Nome obrigatório!</p>
         </ion-text>
       </div>
 
@@ -26,11 +26,11 @@
       
       <div *ngIf="this.regForm.controls?.['email'].touched && this.regForm.controls?.['email'].invalid">
         <ion-text *ngIf="errorControl['email'].errors?.['required']">
-        Email obrigatório!
+        <p>Email obrigatório!
         </ion-text>
         <ion-text *ngIf="errorControl['email'].errors?.['pattern']">
-          Email inválido!
-          </ion-text>
+        <p>Email inválido!</p>
+        </ion-text>
       </div>
 
       <ion-item>
@@ -40,7 +40,7 @@
 
       <div *ngIf="this.regForm.controls?.['address'].touched && this.regForm.controls?.['address'].invalid">
         <ion-text *ngIf="errorControl['address'].errors?.['required']">
-        Endereço obrigatório!
+        <p>Endereço obrigatório!</p>
         </ion-text>
       </div>
 
@@ -52,7 +52,11 @@
 
       <div *ngIf="this.regForm.controls?.['password'].touched && this.regForm.controls?.['password'].invalid">
         <ion-text *ngIf="errorControl['password'].errors?.['required']">
-        Senha obrigatória!
+        <p>Senha obrigatória!</p>
+        </ion-text>
+        <ion-text *ngIf="errorControl['password'].errors?.['pattern']">
+        <p>Sua senha deve conter pelo menos 8 caracteres, sendo no mínino 1 letra maiúscula,
+        1 letra minúscula, 1 número e 1 caractere especial.</p>
         </ion-text>
       </div>
       
@@ -63,7 +67,11 @@
 
       <div *ngIf="this.regForm.controls?.['confirmPassword'].touched && this.regForm.controls?.['confirmPassword'].invalid">
         <ion-text *ngIf="errorControl['confirmPassword'].errors?.['required']">
-        Confirmação da senha obrigatória!
+        <p>Confirmação da senha obrigatória!</p>
+        </ion-text>
+        <ion-text *ngIf="errorControl['confirmPassword'].errors?.['pattern']">
+          <p>Sua senha deve conter pelo menos 8 caracteres, sendo no mínino 1 letra maiúscula,
+        1 letra minúscula, 1 número e 1 caractere especial.</p>
         </ion-text>
       </div>
       

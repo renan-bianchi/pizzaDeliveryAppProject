@@ -11,7 +11,7 @@ import { AuthenticationService } from 'src/app/authentication.service';
   styleUrls: ['./signup.page.scss'],
 })
 export class SignupPage implements OnInit {
-  regForm: FormGroup;
+  regForm: FormGroup
   
   constructor(public formBuilder:FormBuilder, public loadingCtrl: LoadingController, public authService:AuthenticationService) { }
 
@@ -31,7 +31,7 @@ export class SignupPage implements OnInit {
       ],
       confirmPassword: ['', [
         Validators.required,
-        Validators.pattern("(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}")
+        Validators.pattern("(?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}")
       ]
       ]
     })
