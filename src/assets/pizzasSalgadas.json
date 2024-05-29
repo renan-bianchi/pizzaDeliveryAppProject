@@ -1,0 +1,233 @@
+[
+    {
+       "id":"0001",
+       "nome":"Pizza Muzzarela",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0002",
+       "nome":"Pizza Marguerita",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, queijo muzzarela e manjericão",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0003",
+       "nome":"Pizza Calabresa",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, calabresa e cebola",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0004",
+       "nome":"Pizza Abobrinha",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho e abobrinha coberta com queijo",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0005",
+       "nome":"Pizza Alho",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, queijo muzzarela e alho",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0006",
+       "nome":"Pizza Atum 1",
+       "valor":48.99,
+       "descricao":"Massa artesanal, molho, atum e cebola",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0007",
+       "nome":"Pizza Atum 2",
+       "valor":48.99,
+       "descricao":"Massa artesanal, molho, atum, cebola e muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0008",
+       "nome":"Pizza Bauru",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, queijo muzzarela e rodelas de tomate",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0009",
+       "nome":"Pizza Bacon",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, queijo muzzarela e bacon fatiado",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0010",
+       "nome":"Pizza Brocolis 1",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, brocolis, catupiry e bacon fatiado",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0011",
+       "nome":"Pizza Brocolis 2",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, brocolis, queijo muzzarela e bacon",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0012",
+       "nome":"Pizza Baiana",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, calabresa moída, ovo, pimenta e cebola",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0013",
+       "nome":"Pizza Calacatu",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, calabresa e catupiry",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0014",
+       "nome":"Pizza Escarola 1",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, escarola, catupiry e bacon fatiado",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0015",
+       "nome":"Pizza Escarola 2",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, escarola, queijo muzzarela e bacon fatiado",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0016",
+       "nome":"Pizza Francesa",
+       "valor":48.99,
+       "descricao":"Massa artesanal, molho, queijo muzzarela, presunto requeijão e champignon",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0017",
+       "nome":"Pizza Frango c/ Catupiry",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, frango desfiado e catupiry",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0018",
+       "nome":"Pizza Frango c/ Muzzarela",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, frango desfiado e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0019",
+       "nome":"Pizza Lombo Canadense",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, lombo canadense e cebola",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0020",
+       "nome":"Pizza Napolitana",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, queijo parmesão, tomate e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0021",
+       "nome":"Pizza Namorado",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, palmito, bacon, requeijão e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0022",
+       "nome":"Pizza Palmito 1",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, palmito e requeijão",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0023",
+       "nome":"Pizza Palmito 2",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, palmito e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0024",
+       "nome":"Pizza Peito de Peru 1",
+       "valor":45.99,
+       "descricao":"Massa artesanal, molho, peito de peru e requeijão",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0025",
+       "nome":"Pizza Peito de Peru 2",
+       "valor":45.99,
+       "descricao":"Massa artesanal, molho, peito de peru e queijo cheddar",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0026",
+       "nome":"Pizza Portuguesa",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, presunto, ovo, ervilhas e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0027",
+       "nome":"Pizza Siciliana",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, bacon, cebola, champignon e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0028",
+       "nome":"Pizza Toscana",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, calabresa fatiada e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0029",
+       "nome":"Pizza Toscana Especial",
+       "valor":48.99,
+       "descricao":"Massa artesanal, molho, calabresa, requeijão e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0030",
+       "nome":"Pizza Dois Queijos",
+       "valor":43.99,
+       "descricao":"Massa artesanal, molho, requeijão e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0031",
+       "nome":"Pizza Quatro Queijos",
+       "valor":48.99,
+       "descricao":"Massa artesanal, molho, requeijão, provolone, gorgonzola e muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0032",
+       "nome":"Pizza À Moda do Pizzaiolo",
+       "valor":57.99,
+       "descricao":"Massa artesanal, molho, calabresa moída, frango desfiado, requeijão e queijo muzzarela",
+       "quantidadeInicial": 1
+    },
+    {
+       "id":"0033",
+       "nome":"Pizza À Moda do Cliente",
+       "valor":57.99,
+       "descricao":"Massa artesanal, molho, e 5 ingredientes à sua escolha",
+       "quantidadeInicial": 1
+    }
+ ]

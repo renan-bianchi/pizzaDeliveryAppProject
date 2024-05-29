@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { LoadingController } from '@ionic/angular';
 import { AuthenticationService } from 'src/app/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -13,7 +14,7 @@ import { AuthenticationService } from 'src/app/authentication.service';
 export class SignupPage implements OnInit {
   regForm: FormGroup
   
-  constructor(public formBuilder:FormBuilder, public loadingCtrl: LoadingController, public authService:AuthenticationService) { }
+  constructor(public formBuilder:FormBuilder, public loadingCtrl: LoadingController, public authService:AuthenticationService, public router : Router) { }
 
   ngOnInit() {
     this.regForm = this.formBuilder.group({
@@ -21,21 +22,22 @@ export class SignupPage implements OnInit {
       email: ['', [
         Validators.required,
         Validators.email,
-        Validators.pattern("[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$")  
+        Validators.pattern(/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/)
       ]],
       address: ['', [Validators.required]],
       password:['', [
         Validators.required,
-        Validators.pattern("(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}")
+        Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/)
       ]
       ],
       confirmPassword: ['', [
         Validators.required,
-        Validators.pattern("(?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}")
+        Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/)
       ]
       ]
     })
   }
+  //(?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}
   get errorControl(){
     return this.regForm?.controls;
   }
@@ -44,7 +46,19 @@ export class SignupPage implements OnInit {
     const loading = await this.loadingCtrl.create();
     await loading.present();
     if(this.regForm?.valid){
-      // const user = await this.authService.registerUser(email,password);
+      const user = await this.authService.registerUser(this.regForm.value.email,this.regForm.value.password).catch((error) =>{
+        alert(error);
+        loading.dismiss()
+
+      })
+
+      if(user){
+        loading.dismiss()
+        this.router.navigate(['/home'])
+
+      }else{
+        console.log('provide correct values');
+      }
     }
 
   }

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Resumo do Pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Resumo do Pedido</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let item of selectedItems; let i = index">
+      <ion-label>
+        <h2>{{item.nome}}</h2>
+        <h3>{{item.valor | currency}} x {{item.quantidade}}</h3>
+        <h3>Total: {{item.valor * item.quantidade | currency}}</h3>
+      </ion-label>
+      
+      <ion-button color="danger" (click)="removeItem(i)">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label>Total: {{ total | currency }}</ion-label>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,358 @@
+[
+    {
+       "pizzasSalgadas":[
+          {
+             "id":"0001",
+             "nome":"Pizza Muzzarela",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho e queijo muzzarela"
+          },
+          {
+             "id":"0002",
+             "nome":"Pizza Marguerita",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, queijo muzzarela e manjericão"
+          },
+          {
+             "id":"0003",
+             "nome":"Pizza Calabresa",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, calabresa e cebola"
+          },
+          {
+             "id":"0004",
+             "nome":"Pizza Abobrinha",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho e abobrinha coberta com queijo"
+          },
+          {
+             "id":"0005",
+             "nome":"Pizza Alho",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, queijo muzzarela e alho"
+          },
+          {
+             "id":"0006",
+             "nome":"Pizza Atum 1",
+             "valor":48.99,
+             "descricao":"Massa artesanal, molho, atum e cebola"
+          },
+          {
+             "id":"0007",
+             "nome":"Pizza Atum 2",
+             "valor":48.99,
+             "descricao":"Massa artesanal, molho, atum, cebola e muzzarela"
+          },
+          {
+             "id":"0008",
+             "nome":"Pizza Bauru",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, queijo muzzarela e rodelas de tomate"
+          },
+          {
+             "id":"0009",
+             "nome":"Pizza Bacon",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, queijo muzzarela e bacon fatiado"
+          },
+          {
+             "id":"0010",
+             "nome":"Pizza Brocolis 1",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, brocolis, catupiry e bacon fatiado"
+          },
+          {
+             "id":"0011",
+             "nome":"Pizza Brocolis 2",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, brocolis, queijo muzzarela e bacon"
+          },
+          {
+             "id":"0012",
+             "nome":"Pizza Baiana",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, calabresa moída, ovo, pimenta e cebola"
+          },
+          {
+             "id":"0013",
+             "nome":"Pizza Calacatu",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, calabresa e catupiry"
+          },
+          {
+             "id":"0014",
+             "nome":"Pizza Escarola 1",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, escarola, catupiry e bacon fatiado"
+          },
+          {
+             "id":"0015",
+             "nome":"Pizza Escarola 2",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, escarola, queijo muzzarela e bacon fatiado"
+          },
+          {
+             "id":"0016",
+             "nome":"Pizza Francesa",
+             "valor":48.99,
+             "descricao":"Massa artesanal, molho, queijo muzzarela, presunto requeijão e champignon"
+          },
+          {
+             "id":"0017",
+             "nome":"Pizza Frango c/ Catupiry",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, frango desfiado e catupiry"
+          },
+          {
+             "id":"0018",
+             "nome":"Pizza Frango c/ Muzzarela",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, frango desfiado e queijo muzzarela"
+          },
+          {
+             "id":"0019",
+             "nome":"Pizza Lombo Canadense",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, lombo canadense e cebola"
+          },
+          {
+             "id":"0020",
+             "nome":"Pizza Napolitana",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, queijo parmesão, tomate e queijo muzzarela"
+          },
+          {
+             "id":"0021",
+             "nome":"Pizza Namorado",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, palmito, bacon, requeijão e queijo muzzarela"
+          },
+          {
+             "id":"0022",
+             "nome":"Pizza Palmito 1",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, palmito e requeijão"
+          },
+          {
+             "id":"0023",
+             "nome":"Pizza Palmito 2",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, palmito e queijo muzzarela"
+          },
+          {
+             "id":"0024",
+             "nome":"Pizza Peito de Peru 1",
+             "valor":45.99,
+             "descricao":"Massa artesanal, molho, peito de peru e requeijão"
+          },
+          {
+             "id":"0025",
+             "nome":"Pizza Peito de Peru 2",
+             "valor":45.99,
+             "descricao":"Massa artesanal, molho, peito de peru e queijo cheddar"
+          },
+          {
+             "id":"0026",
+             "nome":"Pizza Portuguesa",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, presunto, ovo, ervilhas e queijo muzzarela"
+          },
+          {
+             "id":"0027",
+             "nome":"Pizza Siciliana",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, bacon, cebola, champignon e queijo muzzarela"
+          },
+          {
+             "id":"0028",
+             "nome":"Pizza Toscana",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, calabresa fatiada e queijo muzzarela"
+          },
+          {
+             "id":"0029",
+             "nome":"Pizza Toscana Especial",
+             "valor":48.99,
+             "descricao":"Massa artesanal, molho, calabresa, requeijão e queijo muzzarela"
+          },
+          {
+             "id":"0030",
+             "nome":"Pizza Dois Queijos",
+             "valor":43.99,
+             "descricao":"Massa artesanal, molho, requeijão e queijo muzzarela"
+          },
+          {
+             "id":"0031",
+             "nome":"Pizza Quatro Queijos",
+             "valor":48.99,
+             "descricao":"Massa artesanal, molho, requeijão, provolone, gorgonzola e muzzarela"
+          },
+          {
+             "id":"0032",
+             "nome":"Pizza À Moda do Pizzaiolo",
+             "valor":57.99,
+             "descricao":"Massa artesanal, molho, calabresa moída, frango desfiado, requeijão e queijo muzzarela"
+          },
+          {
+             "id":"0033",
+             "nome":"Pizza À Moda do Cliente",
+             "valor":57.99,
+             "descricao":"Massa artesanal, molho, e 5 ingredientes à sua escolha"
+          }
+       ],
+       "pizzasDoces":[
+          {
+             "id":"0001",
+             "nome":"Pizza Sensação",
+             "valor":37.99,
+             "descricao":"Massa artesanal, chocolate ao leite e morango"
+          },
+          {
+             "id":"0002",
+             "nome":"Pizza Banana Nevada",
+             "valor":37.99,
+             "descricao":"Massa artesanal, banana e chocolate branco passada ao forno"
+          },
+          {
+             "id":"0003",
+             "nome":"Pizza 2 amores",
+             "valor":37.99,
+             "descricao":"Massa artesanal, chocolate ao leite e chocolate branco"
+          },
+          {
+             "id":"0004",
+             "nome":"Pizza Chocolate M&M’s",
+             "valor":37.99,
+             "descricao":"Massa artesanal, chocolate ao leite e M&M’s original"
+          },
+          {
+             "id":"0005",
+             "nome":"Pizza Banana",
+             "valor":37.99,
+             "descricao":"Massa artesanal, banana, doce de leite e canela"
+          },
+          {
+             "id":"0006",
+             "nome":"Pizza Prestígio",
+             "valor":37.99,
+             "descricao":"Massa artesanal, chocolate ao leite, coco ralado e pedaços de chocolate Prestígio"
+          }
+       ],
+       "bebidas":[
+          {
+             "id":"0001",
+             "nome":"Refrigerante Coca-cola 2L",
+             "valor":14.00,
+             "descricao":""
+          },
+          {
+             "id":"0002",
+             "nome":"Refrigerante Sukita Laranja 2L",
+             "valor":12.00,
+             "descricao":""
+          },
+          {
+             "id":"0003",
+             "nome":"Refrigerante Sukita Limão 2L",
+             "valor":12.00,
+             "descricao":""
+          },
+          {
+             "id":"0004",
+             "nome":"Refrigerante Sukita Tubaína 2L",
+             "valor":10.00,
+             "descricao":""
+          },
+          {
+             "id":"0005",
+             "nome":"Refrigerante Coca-cola lata 350ml",
+             "valor":7.0,
+             "descricao":""
+          },
+          {
+             "id":"0006",
+             "nome":"Refrigerante Coca-cola Zero 1L",
+             "valor":10.00,
+             "descricao":""
+          },
+          {
+             "id":"0007",
+             "nome":"Refrigerante Guaraná Antártica Zero 2L",
+             "valor":13.00,
+             "descricao":""
+          },
+          {
+             "id":"0008",
+             "nome":"Refrigerante Coca-cola Zero 2L",
+             "valor":14.00,
+             "descricao":""
+          },
+          {
+             "id":"0009",
+             "nome":"Suco Dell-Vale Uva 1L",
+             "valor":15.00,
+             "descricao":""
+          },
+          {
+             "id":"0010",
+             "nome":"Cerveja Heineken 600ml",
+             "valor":17.00,
+             "descricao":""
+          },
+          {
+             "id":"0011",
+             "nome":"Cerveja Brahma Duplo Malte 600ml",
+             "valor":14.00,
+             "descricao":""
+          },
+          {
+             "id":"0012",
+             "nome":"Cerveja Amstel 600ml",
+             "valor":14.00,
+             "descricao":""
+          },
+          {
+             "id":"0013",
+             "nome":"Cerveja Heineken long-neck",
+             "valor":7.00,
+             "descricao":""
+          },
+          {
+             "id":"0014",
+             "nome":"Cerveja Brahma Duplo Malte long neck",
+             "valor":6.00,
+             "descricao":""
+          },
+          {
+             "id":"0015",
+             "nome":"Cerveja Heineken lata",
+             "valor":7.00,
+             "descricao":""
+          },
+          {
+             "id":"0016",
+             "nome":"Cerveja Brahma Duplo Malte lata",
+             "valor":5.00,
+             "descricao":""
+          },
+          {
+             "id":"0017",
+             "nome":"Cerveja Amstel lata",
+             "valor":5.00,
+             "descricao":""
+          },
+          {
+             "id":"0018",
+             "nome":"Água Minalba 1,5L",
+             "valor":5.00,
+             "descricao":""
+          },
+          {
+             "id":"0019",
+             "nome":"Água Minalba 600ml",
+             "valor":3.00,
+             "descricao":""
+          }
+       ]
+    }
+ ]

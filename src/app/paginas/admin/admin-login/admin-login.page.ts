@@ -5,11 +5,11 @@ import { LoadingController } from '@ionic/angular';
 import { AuthenticationService } from 'src/app/authentication.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-admin-login',
+  templateUrl: './admin-login.page.html',
+  styleUrls: ['./admin-login.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class AdminLoginPage implements OnInit {
   loginForm: FormGroup
 
   constructor(public formBuilder:FormBuilder, public loadingCtrl: LoadingController, public authService:AuthenticationService, public router : Router) { }
@@ -47,7 +47,7 @@ export class LoginPage implements OnInit {
 // o tutorial da mina é bom, mas tem umas parada meio erradal... fora q tá foda entender oq ela fala
       if(user){
         loading.dismiss()
-        this.router.navigate(['/home'])
+        this.router.navigate(['/admin-home'])
 
       }else{
         console.log('provide correct values');
@@ -55,5 +55,4 @@ export class LoginPage implements OnInit {
     }
 
   }
-
 }

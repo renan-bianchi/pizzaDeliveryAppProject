@@ -1,0 +1,44 @@
+[
+   {
+      "id":"0001",
+      "nome":"Pizza Sensação",
+      "valor":37.99,
+      "descricao":"Massa artesanal, chocolate ao leite e morango",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0002",
+      "nome":"Pizza Banana Nevada",
+      "valor":37.99,
+      "descricao":"Massa artesanal, banana e chocolate branco passada ao forno",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0003",
+      "nome":"Pizza 2 amores",
+      "valor":37.99,
+      "descricao":"Massa artesanal, chocolate ao leite e chocolate branco",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0004",
+      "nome":"Pizza Chocolate M&M’s",
+      "valor":37.99,
+      "descricao":"Massa artesanal, chocolate ao leite e M&M’s original",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0005",
+      "nome":"Pizza Banana",
+      "valor":37.99,
+      "descricao":"Massa artesanal, banana, doce de leite e canela",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0006",
+      "nome":"Pizza Prestígio",
+      "valor":37.99,
+      "descricao":"Massa artesanal, chocolate ao leite, coco ralado e pedaços de chocolate Prestígio",
+      "quantidadeInicial": 1
+   }
+ ]

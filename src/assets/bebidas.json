@@ -1,0 +1,135 @@
+[
+   {
+      "id":"0001",
+      "nome":"Refrigerante Coca-cola 2L",
+      "valor":14.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0002",
+      "nome":"Refrigerante Sukita Laranja 2L",
+      "valor":12.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0003",
+      "nome":"Refrigerante Sukita Limão 2L",
+      "valor":12.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0004",
+      "nome":"Refrigerante Sukita Tubaína 2L",
+      "valor":10.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0005",
+      "nome":"Refrigerante Coca-cola lata 350ml",
+      "valor":7.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0006",
+      "nome":"Refrigerante Coca-cola Zero 1L",
+      "valor":10.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0007",
+      "nome":"Refrigerante Guaraná Antártica Zero 2L",
+      "valor":13.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0008",
+      "nome":"Refrigerante Coca-cola Zero 2L",
+      "valor":14.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0009",
+      "nome":"Suco Dell-Vale Integral Uva 1L",
+      "valor":15.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0010",
+      "nome":"Cerveja Lager Heineken 600ml",
+      "valor":17.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0011",
+      "nome":"Cerveja Brahma Duplo Malte 600ml",
+      "valor":14.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0012",
+      "nome":"Cerveja Puro Malte Amstel 600ml",
+      "valor":14.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0013",
+      "nome":"Cerveja Lager Heineken long-neck",
+      "valor":7.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0014",
+      "nome":"Cerveja Brahma Duplo Malte long neck",
+      "valor":6.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0015",
+      "nome":"Cerveja Lager Heineken lata",
+      "valor":7.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0016",
+      "nome":"Cerveja Brahma Duplo Malte lata",
+      "valor":5.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0017",
+      "nome":"Cerveja Puro Malte Amstel lata",
+      "valor":5.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0018",
+      "nome":"Água Mineral Minalba 1,5L",
+      "valor":5.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   },
+   {
+      "id":"0019",
+      "nome":"Água Mineral Minalba 600ml",
+      "valor":3.99,
+      "descricao":"",
+      "quantidadeInicial": 1
+   }
+ ]

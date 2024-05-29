@@ -1,0 +1,92 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cardápio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" ion-content fixed-slot-placement="before">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cardápio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-fab horizontal="center" vertical="bottom" slot="fixed">
+    <ion-button style="width: 350px; height: 50px;" expand="full" color="primary" (click)="finalizeOrder()">Finalizar Pedido</ion-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-list-header slot="header" color="dark">
+      <ion-label>Pizzas Salgadas</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of menuSalgadas; let i = index">
+      <ion-button slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
+        <ion-icon name="checkbox" slot="start" *ngIf="item.selected"></ion-icon>
+        <ion-label>
+          <h2>{{item.nome}}</h2>
+          <p>{{item.descricao}}</p> 
+        </ion-label>
+      <h3>{{item.valor | currency}}</h3>
+    </ion-button>
+    <ion-buttons slot="end">
+      <ion-button color="tertiary" (click)="decreaseQuantity('salgadas', i)">
+        <ion-icon name="remove-circle-outline"></ion-icon>
+      </ion-button>
+      <span>{{item.quantidade}}</span>
+      <ion-button color="primary" (click)="increaseQuantity('salgadas', i)">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header slot="header" color="dark">
+      <ion-label>Pizzas Doces</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of menuDoces; let i = index">
+      <ion-button style="width: 500px;" slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
+        <ion-icon name="checkbox" slot="start" *ngIf="item.selected"></ion-icon>
+        <ion-label>
+          <h2>{{item.nome}}</h2>
+          <p>{{item.descricao}}</p>
+        </ion-label>
+      <h3>{{item.valor}}</h3>
+    </ion-button>
+    <ion-buttons slot="end">
+      <ion-button color="tertiary" (click)="decreaseQuantity('salgadas', i)">
+        <ion-icon name="remove-circle-outline"></ion-icon>
+      </ion-button>
+      <span>{{item.quantidadeInicial}}</span>
+      <ion-button color="primary" (click)="increaseQuantity('salgadas', i)">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header slot="header" color="dark">
+      <ion-label>Bebidas</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of menuBebidas; let i = index">
+      <ion-button style="width: 500px;" slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
+        <ion-icon name="checkbox" slot="start" *ngIf="item.selected"></ion-icon>
+        <ion-label>
+          <h2>{{item.nome}}</h2>
+        </ion-label>
+      <h3>{{item.valor}}</h3>
+    </ion-button>
+    <ion-buttons slot="end">
+      <ion-button color="tertiary" (click)="decreaseQuantity('salgadas', i)">
+        <ion-icon name="remove-circle-outline"></ion-icon>
+      </ion-button>
+      <span>{{item.quantidadeInicial}}</span>
+      <ion-button color="primary" (click)="increaseQuantity('salgadas', i)">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

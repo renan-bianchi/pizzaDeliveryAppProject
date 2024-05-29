@@ -31,6 +31,26 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./paginas/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'admin-login',
+    loadChildren: () => import('./paginas/admin/admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
+  },
+  {
+    path: 'admin-home',
+    loadChildren: () => import('./paginas/admin/admin-home/admin-home.module').then( m => m.AdminHomePageModule)
+  },
+  {
+    path: 'cardapio',
+    loadChildren: () => import('./paginas/cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./paginas/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
+  {
+    path: 'resumo-pedido',
+    loadChildren: () => import('./resumo-pedido/resumo-pedido.module').then( m => m.ResumoPedidoPageModule)
+  },
 ];
 @NgModule({
   imports: [

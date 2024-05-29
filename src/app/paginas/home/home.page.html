@@ -10,4 +10,23 @@
       <ion-title size="large">home</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div>
+    <ion-item>
+      <ion-button [routerLink]="['/cardapio']">
+        Cardápio
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      Informações
+        (Contato
+        Endereço
+        Horário de funcionamento)
+    </ion-item>
+  </div>
+
+  <div>
+    <ion-title></ion-title> <!-- ver como mostrar a informação do usuário aqui... é algo com {{user. algo}}-->
+    <ion-button (click)="logout()">Sign out</ion-button>
+  </div>
 </ion-content>
