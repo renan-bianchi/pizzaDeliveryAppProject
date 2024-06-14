@@ -1,4 +1,4 @@
-## Pizza delivery app projectP
+## Pizza delivery app project
 ### Pizzaria Nostra Nonna
 
 This project was developed as a task for my graduation course. The idea was to create an aplication for a company in order to solve a need of a company, that could be a real or fictional one.
