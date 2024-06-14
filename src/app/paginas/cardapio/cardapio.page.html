@@ -45,7 +45,7 @@
       <ion-label>Pizzas Doces</ion-label>
     </ion-list-header>
     <ion-item *ngFor="let item of menuDoces; let i = index">
-      <ion-button style="width: 500px;" slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
+      <ion-button slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
         <ion-icon name="checkbox" slot="start" *ngIf="item.selected"></ion-icon>
         <ion-label>
           <h2>{{item.nome}}</h2>
@@ -54,11 +54,11 @@
       <h3>{{item.valor}}</h3>
     </ion-button>
     <ion-buttons slot="end">
-      <ion-button color="tertiary" (click)="decreaseQuantity('salgadas', i)">
+      <ion-button color="tertiary" (click)="decreaseQuantity('doces', i)">
         <ion-icon name="remove-circle-outline"></ion-icon>
       </ion-button>
-      <span>{{item.quantidadeInicial}}</span>
-      <ion-button color="primary" (click)="increaseQuantity('salgadas', i)">
+      <span>{{item.quantidade}}</span>
+      <ion-button color="primary" (click)="increaseQuantity('doces', i)">
         <ion-icon name="add-circle-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -70,7 +70,7 @@
       <ion-label>Bebidas</ion-label>
     </ion-list-header>
     <ion-item *ngFor="let item of menuBebidas; let i = index">
-      <ion-button style="width: 500px;" slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
+      <ion-button slot="start" color="light" (click)="addToCart(item); toggleSelection(item)" [ngClass]="{ 'selected': item.selected }">
         <ion-icon name="checkbox" slot="start" *ngIf="item.selected"></ion-icon>
         <ion-label>
           <h2>{{item.nome}}</h2>
@@ -78,11 +78,11 @@
       <h3>{{item.valor}}</h3>
     </ion-button>
     <ion-buttons slot="end">
-      <ion-button color="tertiary" (click)="decreaseQuantity('salgadas', i)">
+      <ion-button color="tertiary" (click)="decreaseQuantity('bebidas', i)">
         <ion-icon name="remove-circle-outline"></ion-icon>
       </ion-button>
-      <span>{{item.quantidadeInicial}}</span>
-      <ion-button color="primary" (click)="increaseQuantity('salgadas', i)">
+      <span>{{item.quantidade}}</span>
+      <ion-button color="primary" (click)="increaseQuantity('bebidas', i)">
         <ion-icon name="add-circle-outline"></ion-icon>
       </ion-button>
     </ion-buttons>

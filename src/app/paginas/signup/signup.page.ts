@@ -42,25 +42,55 @@ export class SignupPage implements OnInit {
     return this.regForm?.controls;
   }
 
-  async signUp(){
+  async signUp() {
     const loading = await this.loadingCtrl.create();
     await loading.present();
-    if(this.regForm?.valid){
-      const user = await this.authService.registerUser(this.regForm.value.email,this.regForm.value.password).catch((error) =>{
+
+    if (this.regForm?.valid) {
+      const { email, password, fullname, address } = this.regForm.value;
+
+      try {
+        const user = await this.authService.registerUser(email, password);
+
+        if (user) {
+          // Adiciona dados adicionais ao Firestore
+          await this.authService.addUserData(user.uid, fullname, address, email);
+          loading.dismiss();
+          this.router.navigate(['/home']);
+        }
+      } catch (error) {
         alert(error);
-        loading.dismiss()
-
-      })
-
-      if(user){
-        loading.dismiss()
-        this.router.navigate(['/home'])
-
-      }else{
-        console.log('provide correct values');
+        loading.dismiss();
       }
+    } else {
+      console.log('provide correct values');
     }
-
   }
-
 }
+
+
+
+
+
+//   async signUp(){
+//     const loading = await this.loadingCtrl.create();
+//     await loading.present();
+//     if(this.regForm?.valid){
+//       const user = await this.authService.registerUser(this.regForm.value.email,this.regForm.value.password).catch((error) =>{
+//         alert(error);
+//         loading.dismiss()
+
+//       })
+
+//       if(user){
+//         loading.dismiss()
+//         this.router.navigate(['/home'])
+
+//       }else{
+//         console.log('provide correct values');
+//       }
+//     }
+
+//   }
+
+// }

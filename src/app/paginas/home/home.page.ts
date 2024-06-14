@@ -9,12 +9,23 @@ import { AuthenticationService } from 'src/app/authentication.service';
 })
 export class HomePage implements OnInit {
   user:any
+  userName: string;
+  
   constructor(public route: Router, public authService: AuthenticationService) {
     this.user = authService.getProfile()
   }
     
   
-    ngOnInit() {
+  ngOnInit() {
+    this.authService.getCurrentUserUID().subscribe(uid => {
+      if (uid) {
+        this.authService.getUserData(uid).subscribe(userData => {
+          this.userName = userData ? userData['name'] : 'Usuário';
+        });
+      } else {
+        this.userName = 'Usuário';
+      }
+    });
   }
 
   async logout(){

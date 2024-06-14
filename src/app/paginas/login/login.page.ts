@@ -42,9 +42,7 @@ export class LoginPage implements OnInit {
 
       })
 
-// se der login com os campos vazios fica carregando pra sempre
-// ver se não é o metodo de register q tá errado, deve ser algo de login, não registrar usuário
-// o tutorial da mina é bom, mas tem umas parada meio erradal... fora q tá foda entender oq ela fala
+
       if(user){
         loading.dismiss()
         this.router.navigate(['/home'])

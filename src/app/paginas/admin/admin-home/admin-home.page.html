@@ -1,35 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>adminHome</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Painel do administrador</ion-title>
+      <ion-title size="large">Painel do Administrador</ion-title>
     </ion-toolbar>
   </ion-header>
 
-    <ion-text>
-      Pedidos do dia
-        lista de pedidos pendentes
-        lista de pedidos entregues
-      Dias anteriores
-    </ion-text>
-
-    <ion-text>
-      <ion-button>Editar cardápio</ion-button>
-      
-        (editar JSON do cardápio)
-    </ion-text>
-
-    <ion-text>
-      Editar perfil
-        Endereço
-        Contato
-        Horário de funcionamento
-    </ion-text>
-
-  
+  <ion-list>
+    <ion-item *ngFor="let pedido of pedidos">
+      <ion-label>
+        <h2>Total: {{ pedido?.total | currency }}</h2>
+        <p>Forma de Pagamento: {{ pedido?.formaPagamento }}</p>
+        <p>Nome: {{ pedido?.user?.name }}</p>
+        <p>Email: {{ pedido?.user?.email }}</p>
+        <p>Produtos:</p>
+        <ion-list>
+          <ion-item *ngFor="let item of pedido?.items">
+            <ion-label>
+              <p>Nome: {{ item?.nome }}</p>
+              <p>Quantidade: {{ item?.quantidade }}</p>      
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

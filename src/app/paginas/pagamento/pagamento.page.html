@@ -1,13 +1,47 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>pagamento</ion-title>
+    <ion-title>Pagamento</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">pagamento</ion-title>
+      <ion-title size="large">Pagamento</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-list>
+    <ion-radio-group [(ngModel)]="formaPagamento">
+      <ion-list-header>
+        <ion-label>Selecione a forma de pagamento</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Pix</ion-label>
+        <ion-radio slot="start" value="pix"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Dinheiro</ion-label>
+        <ion-radio slot="start" value="dinheiro"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cartão de Crédito</ion-label>
+        <ion-radio slot="start" value="credito"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cartão de Débito</ion-label>
+        <ion-radio slot="start" value="debito"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label>Total a pagar: {{ total | currency }}</ion-label>
+  </ion-item>
+
+  <ion-button expand="full" (click)="confirmarPagamento()">Confirmar Pagamento</ion-button>
 </ion-content>

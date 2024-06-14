@@ -1,32 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-title>Olá {{userName}}. Bem-vindo à Nostra Nonna Pizza!</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">home</ion-title>
+      <ion-title size="large">Bem-vindo à Nostra Nonna Pizza!</ion-title>
     </ion-toolbar>
   </ion-header>
   <div>
-    <ion-item>
-      <ion-button [routerLink]="['/cardapio']">
-        Cardápio
-      </ion-button>
-    </ion-item>
 
-    <ion-item>
-      Informações
-        (Contato
-        Endereço
-        Horário de funcionamento)
-    </ion-item>
+    <div>
+      <img alt="PromoPizzas" src="/assets/imgs/pizza4.jpg"/>
+      <img alt="PromoPizzas" src="/assets/imgs/pizza1.jpg"/>
+      <ion-card>
+        <ion-card-header>
+          <ion-button [routerLink]="['/cardapio']">
+            Cardápio
+          </ion-button>
+        </ion-card-header>
+        <ion-card-content> Confira o catálogo completo das nossas deliciosas pizzas! Todas feitas no forno à lenha com massa artesanal e ingredientes da melhor qualidade! </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          Informações
+        </ion-card-header>
+        <ion-card-content>
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-text> 11 3662-0000</ion-text>
+          <ion-text><br></ion-text>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-text> 11 9 9991-0000</ion-text>
+          <ion-text><br></ion-text>
+          <ion-icon name="location-outline"></ion-icon>
+          <ion-text> Avenida Presidente Teste, 123</ion-text>
+          <ion-text><br></ion-text>
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-text> De terças a domingos: das 18h às 00h.</ion-text>
+        </ion-card-content>
+        <ion-card-content></ion-card-content>
+      </ion-card>
+
+    </div>
+    
   </div>
 
   <div>
     <ion-title></ion-title> <!-- ver como mostrar a informação do usuário aqui... é algo com {{user. algo}}-->
-    <ion-button (click)="logout()">Sign out</ion-button>
+    <ion-button (click)="logout()">Sair</ion-button>
   </div>
 </ion-content>

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pedido Confirmado!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">pedidoConfirmado</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-card color="primary" style="height: 100px; text-align: left; margin-top: 100px; padding: 20px; color: aliceblue;">
+    <h1>
+      E a nonna diz "Grazie mille"!
+    </h1>
+  </ion-card>
+  
+
+  
+  <ion-item color="secondary" style="width: 535px; margin: 10px;">
+    <ion-text style="margin: 40px;">
+      Estamos preparando seu pedido! Em breve você receberá a confirmação por email!
+    </ion-text>
+  </ion-item>
+
+  <ion-button [routerLink]="['/home']">
+    Voltar para página inicial.
+  </ion-button>
+</ion-content>

@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'resumo-pedido',
     loadChildren: () => import('./resumo-pedido/resumo-pedido.module').then( m => m.ResumoPedidoPageModule)
   },
+  {
+    path: 'pedido-confirmado',
+    loadChildren: () => import('./paginas/pedido-confirmado/pedido-confirmado.module').then( m => m.PedidoConfirmadoPageModule)
+  },
 ];
 @NgModule({
   imports: [
